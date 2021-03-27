@@ -27,7 +27,7 @@ function countByCatogory ($allStories, $cat) {
   <div class="content">
   	<header>
   		<p class="font-sans-m color-white-50">
-  			<a onclick="a.reset();">Food Stories</a>
+  			<a onclick="a.reset();">X Stories</a>
   		</p>
 			<div class="gradient"></div>
   	</header>

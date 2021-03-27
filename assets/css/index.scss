@@ -7,11 +7,17 @@
 // Variables
 // ------------------------------------------------------------------------
 
-$dark:    #1D1E20;
-$black:   #131415;
-$bg:      #FFDFD4;
-$green:   #93ECA4;
-$purple:  #765BA7;
+// $dark:    #1D1E20;
+// $black:   #131415;
+// $bg:      #FFDFD4;
+// $green:   #93ECA4;
+// $purple:  #765BA7;
+
+$dark:    teal;
+$black:   black;
+$bg:      lighten(teal, 10%);
+$green:   cyan;
+$purple:  blue;
 
 $nav-w: 60px;
 $space: 20px;

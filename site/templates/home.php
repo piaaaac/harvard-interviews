@@ -21,7 +21,7 @@
 	<div id="texts"><div class="content"></div></div>
 
 	<a id="logo" target="_blank" href="http://foodcoalition.scot">
-		<img src="<?= $kirby->url("assets") ?>/images/sfc-logo.png" />
+		<img src="<?= $kirby->url("assets") ?>/images/logo.png" />
 	</a>
 </div>
 

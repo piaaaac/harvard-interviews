@@ -67,14 +67,14 @@ $privacyText = $privacy->text()->kt();
       <?= $aboutText ?>
     </div>
     <div class="kt my-space-2">
-      <h2 class="font-serif-m upper">Project by The Scottish Food Coalition</h2>
+      <h2 class="font-serif-m upper">Project by xxxxxxxx</h2>
     </div>
     <p class="my-space-2">
-      <img src="<?= $assets ?>/images/sfc-logo.png" width="120" />
+      <img src="<?= $assets ?>/images/logo.png" width="120" />
     </p>
     <p class="my-space-2">
-      <a class="button" target="_blank" href="http://foodcoalition.scot">
-        Visit <span class="d-none d-sm-inline">&nbsp;the Coalition&rsquo;s&nbsp;</span>website
+      <a class="button" target="_blank" href="http://alexpiacenitni.com">
+        Visit the website
       </a>
     </p>
     <p class="kt font-serif-m">
