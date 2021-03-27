@@ -1,0 +1,44 @@
+title: Site
+tabs:
+
+  otherPages:
+    label: Stories
+    sections: 
+      storiesDraft:
+        headline: Draft stories
+        type: pages
+        parent: site.find('stories')
+        status: draft
+        template: story
+
+      storiesUnlisted:
+        headline: Stories in review
+        type: pages
+        parent: site.find('stories')
+        status: unlisted
+        template: story
+
+      storiesListed:
+        headline: Published stories
+        type: pages
+        parent: site.find('stories')
+        status: listed
+        template: story
+
+  settings:
+    label: Other pages
+    sections:
+
+      otherpageswrapper:
+        type: fields
+        fields:
+
+          otherPages:
+            type: pages
+            label: Other Pages
+
+
+
+
+
+

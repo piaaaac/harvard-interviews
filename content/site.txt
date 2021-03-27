@@ -1,0 +1,8 @@
+Title: Food Stories
+
+----
+
+Otherpages:
+
+- about
+- privacy

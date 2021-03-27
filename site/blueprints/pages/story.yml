@@ -1,0 +1,44 @@
+title: Story
+preset: page
+pages: false
+
+status:
+  draft: Draft
+  unlisted: In review
+  listed: Published
+
+fields:
+
+  text:
+    label: Text
+    type: textarea
+    size: medium
+
+sidebar:
+
+  meta: 
+    type: fields
+    fields:
+    
+      categories:
+        label: Categories
+        type: tags
+        options: query
+        query: site.find('stories').childrenAndDrafts.pluck("categories", ",", true)
+
+      storyDate:
+        label: Date
+        type: date
+
+      author:
+        label: Author
+        type: text
+
+      source:
+        label: Source
+        type: text
+
+      place:
+        label: Place
+        type: text
+

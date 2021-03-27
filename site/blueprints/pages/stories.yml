@@ -1,0 +1,22 @@
+options:
+  changeStatus: false
+
+sections:
+
+  draftItems:
+    headline: Drafts
+    type: pages
+    status: draft
+    templates: story
+
+  unlistedItems:
+    headline: In review
+    type: pages
+    status: unlisted
+    templates: story
+
+  listedItems:
+    headline: Published
+    type: pages
+    status: listed
+    templates: story
