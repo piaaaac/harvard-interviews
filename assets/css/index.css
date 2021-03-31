@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/*
+Sfondo del menu e dei testi: #f0f8ff
+Sfondo della ruota: #0e1b30
+Colore testi dentro la ruota: #f0f8ff
+Colore delle categorie accese nel menù: #c7404b
+
+rosso accesso #B8252F
+rosso spento #FF9493
+*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Jomolhari&display=swap");
 *:not(i), *:not(i)::before, *:not(i)::after {
   margin: 0;
   padding: 0;
@@ -14,11 +24,11 @@ footer, header, main, menu, nav, section, summary {
   display: block; }
 
 ::-moz-selection {
-  background: #dc3545;
+  background: #B8252F;
   color: black; }
 
 ::selection {
-  background: #dc3545;
+  background: #B8252F;
   color: black; }
 
 body:not(.user-is-tabbing) button:focus,
@@ -51,27 +61,31 @@ html body input:-internal-autofill-selected {
   background-image: none !important;
   color: -internal-light-dark-color(black, white) !important; }
 
-@font-face {
-  font-family: "Apfel Grotezk";
-  src: url("../fonts/ApfelGrotezk/ApfelGrotezk-Regular.woff2") format("woff2"), url("../fonts/ApfelGrotezk/ApfelGrotezk-Regular.woff") format("woff");
+.font-sans-l {
+  font-family: "DM Sans", sans-serif;
+  font-size: 33px;
+  letter-spacing: 0em;
+  line-height: 1.2em;
   font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Junicode';
-  src: url("../fonts/Junicode/junicode-regular-webfont.eot");
-  src: url("../fonts/Junicode/junicode-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Junicode/junicode-regular-webfont.woff2") format("woff2"), url("../fonts/Junicode/junicode-regular-webfont.woff") format("woff"), url("../fonts/Junicode/junicode-regular-webfont.ttf") format("truetype"), url("../fonts/Junicode/junicode-regular-webfont.svg#junicoderegular") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Junicode';
-  src: url("../fonts/Junicode/junicode-italic-webfont.eot");
-  src: url("../fonts/Junicode/junicode-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Junicode/junicode-italic-webfont.woff2") format("woff2"), url("../fonts/Junicode/junicode-italic-webfont.woff") format("woff"), url("../fonts/Junicode/junicode-italic-webfont.ttf") format("truetype"), url("../fonts/Junicode/junicode-italic-webfont.svg#junicodeitalic") format("svg");
-  font-weight: 400;
-  font-style: italic; }
+  font-style: normal;
+  font-stretch: normal; }
+  @media (min-width: 576px) {
+    .font-sans-l {
+      font-size: 33px; } }
+  @media (min-width: 768px) {
+    .font-sans-l {
+      font-size: 33px; } }
+  @media (min-width: 992px) {
+    .font-sans-l {
+      font-size: 33px; } }
+  @media (min-width: 1200px) {
+    .font-sans-l {
+      font-size: 33px; } }
+
 .font-sans-m {
-  font-family: "Apfel Grotezk", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 17px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   line-height: 1.4em;
   font-weight: 400;
   font-style: normal;
@@ -90,29 +104,29 @@ html body input:-internal-autofill-selected {
       font-size: 17px; } }
 
 .font-serif-huge {
-  font-family: "Junicode", serif;
-  font-size: 8vw;
+  font-family: "Jomolhari", serif;
+  font-size: 6vw;
   letter-spacing: 0.02em;
-  line-height: 1em;
+  line-height: 1.2em;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal; }
   @media (min-width: 576px) {
     .font-serif-huge {
-      font-size: 8vw; } }
+      font-size: 6vw; } }
   @media (min-width: 768px) {
     .font-serif-huge {
-      font-size: 7vh; } }
+      font-size: 5vh; } }
   @media (min-width: 992px) {
     .font-serif-huge {
-      font-size: 8vh; } }
+      font-size: 6vh; } }
   @media (min-width: 1200px) {
     .font-serif-huge {
-      font-size: 8vh; } }
+      font-size: 6vh; } }
 
 .font-serif-m {
-  font-family: "Junicode", serif;
-  font-size: 22px;
+  font-family: "Jomolhari", serif;
+  font-size: 20px;
   letter-spacing: 0.02em;
   line-height: 1.4em;
   font-weight: 400;
@@ -120,16 +134,16 @@ html body input:-internal-autofill-selected {
   font-stretch: normal; }
   @media (min-width: 576px) {
     .font-serif-m {
-      font-size: 22px; } }
+      font-size: 20px; } }
   @media (min-width: 768px) {
     .font-serif-m {
-      font-size: 22px; } }
+      font-size: 20px; } }
   @media (min-width: 992px) {
     .font-serif-m {
-      font-size: 22px; } }
+      font-size: 20px; } }
   @media (min-width: 1200px) {
     .font-serif-m {
-      font-size: 22px; } }
+      font-size: 20px; } }
 
 /* USAGE 
 @include keyframes(slide-down) {
@@ -181,7 +195,7 @@ html body input:-internal-autofill-selected {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 20px;
     height: 2px;
-    background-color: #fff;
+    background-color: #F0F8FF;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -219,8 +233,8 @@ html body input:-internal-autofill-selected {
   background-color: white; }
 
 :root {
-  font-family: "Apfel Grotezk", sans-serif, sans-serif;
-  color: black; }
+  font-family: "DM Sans", sans-serif, sans-serif;
+  color: #0E1B30; }
 
 a {
   cursor: pointer; }
@@ -231,11 +245,12 @@ a {
     border-radius: 1em;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-    color: white;
+    background-color: #225582;
+    color: #0E1B30;
+    color: white !important;
     text-decoration: none;
-    font-family: "Junicode", serif;
-    font-size: 22px;
+    font-family: "Jomolhari", serif;
+    font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 1.4em;
     font-weight: 400;
@@ -248,30 +263,31 @@ a {
     transition: background-color 200ms; }
     @media (min-width: 576px) {
       a.button {
-        font-size: 22px; } }
+        font-size: 20px; } }
     @media (min-width: 768px) {
       a.button {
-        font-size: 22px; } }
+        font-size: 20px; } }
     @media (min-width: 992px) {
       a.button {
-        font-size: 22px; } }
+        font-size: 20px; } }
     @media (min-width: 1200px) {
       a.button {
-        font-size: 22px; } }
+        font-size: 20px; } }
     a.button:hover {
-      background-color: #0000e6; }
+      background-color: #1d486e; }
     a.button.external::before {
       content: "↗";
       margin-right: 0.5em; }
 
 h1 {
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.3em; }
 
 h2 {
-  font-family: "Junicode", serif;
-  font-size: 8vw;
+  font-family: "Jomolhari", serif;
+  font-size: 6vw;
   letter-spacing: 0.02em;
-  line-height: 1em;
+  line-height: 1.2em;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -279,19 +295,19 @@ h2 {
   margin-bottom: 50px; }
   @media (min-width: 576px) {
     h2 {
-      font-size: 8vw; } }
+      font-size: 6vw; } }
   @media (min-width: 768px) {
     h2 {
-      font-size: 7vh; } }
+      font-size: 5vh; } }
   @media (min-width: 992px) {
     h2 {
-      font-size: 8vh; } }
+      font-size: 6vh; } }
   @media (min-width: 1200px) {
     h2 {
-      font-size: 8vh; } }
+      font-size: 6vh; } }
 
 .kt a {
-  color: blue; }
+  color: #225582; }
 
 .color-white {
   color: white; }
@@ -299,8 +315,17 @@ h2 {
 .hover-white:hover {
   color: white; }
 
+.hover-blue:hover {
+  color: #0E1B30; }
+
+.color-lightblue {
+  color: #F0F8FF; }
+
 .color-white-50 {
   color: rgba(255, 255, 255, 0.5); }
+
+.color-blue-50 {
+  color: rgba(14, 27, 48, 0.5); }
 
 .color-black-50 {
   color: rgba(0, 0, 0, 0.5); }
@@ -311,11 +336,14 @@ h2 {
 .color-black-30 {
   color: rgba(0, 0, 0, 0.3); }
 
+.color-lightblue-30 {
+  color: rgba(240, 248, 255, 0.3); }
+
 .color-black {
   color: black; }
 
 .color-purple {
-  color: blue; }
+  color: #225582; }
 
 .opacity-0 {
   opacity: 0; }
@@ -324,7 +352,7 @@ h2 {
   opacity: 0.5; }
 
 .bg-bg {
-  background-color: #00b3b3; }
+  background-color: #0E1B30; }
 
 .bg-white {
   background-color: white; }
@@ -332,8 +360,8 @@ h2 {
 .bg-black {
   background-color: black; }
 
-.bg-green {
-  background-color: cyan; }
+.bg-red {
+  background-color: #B8252F; }
 
 .upper {
   text-transform: uppercase; }
@@ -406,7 +434,15 @@ h2 {
   left: 0;
   right: 0;
   overflow: hidden;
-  background-color: #00b3b3; }
+  background-color: #0E1B30;
+  -webkit-transition: background-color 400ms;
+  -moz-transition: background-color 400ms;
+  -ms-transition: background-color 400ms;
+  -o-transition: background-color 400ms;
+  transition: background-color 400ms; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body.story-open #screen {
+      background-color: #F0F8FF; } }
   #screen #menu {
     position: fixed;
     top: 0;
@@ -414,17 +450,17 @@ h2 {
     left: 0;
     z-index: 5;
     width: 60px;
-    -webkit-transition: width 400ms;
-    -moz-transition: width 400ms;
-    -ms-transition: width 400ms;
-    -o-transition: width 400ms;
-    transition: width 400ms;
-    background-color: teal;
-    color: white;
+    -webkit-transition: width 400ms, background-color 400ms;
+    -moz-transition: width 400ms, background-color 400ms;
+    -ms-transition: width 400ms, background-color 400ms;
+    -o-transition: width 400ms, background-color 400ms;
+    transition: width 400ms, background-color 400ms;
+    background-color: #142644;
+    color: #0E1B30;
     overflow: hidden; }
     #screen #menu .hmb {
       position: absolute;
-      z-index: 5;
+      z-index: 1005;
       top: 0;
       right: 0;
       width: 60px;
@@ -432,12 +468,15 @@ h2 {
       display: flex;
       align-items: center;
       justify-content: center; }
+      #screen #menu .hmb button.hamburger.is-active span.hamburger-inner, #screen #menu .hmb button.hamburger.is-active span.hamburger-inner::before, #screen #menu .hmb button.hamburger.is-active span.hamburger-inner::after {
+        background-color: #0E1B30; }
     #screen #menu .rotated {
-      -webkit-transition: opacity 400ms;
-      -moz-transition: opacity 400ms;
-      -ms-transition: opacity 400ms;
-      -o-transition: opacity 400ms;
-      transition: opacity 400ms;
+      -webkit-transition: background-color 400ms, color 400ms;
+      -moz-transition: background-color 400ms, color 400ms;
+      -ms-transition: background-color 400ms, color 400ms;
+      -o-transition: background-color 400ms, color 400ms;
+      transition: background-color 400ms, color 400ms;
+      z-index: 1000;
       position: fixed;
       top: 0;
       left: 0;
@@ -448,7 +487,9 @@ h2 {
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #F0F8FF;
+      background-color: #142644; }
     #screen #menu .content {
       opacity: 0;
       pointer-events: none;
@@ -480,29 +521,35 @@ h2 {
         #screen #menu .content header p {
           padding: 15px 0; }
         #screen #menu .content header .gradient {
+          z-index: 1;
           pointer-events: none;
           position: absolute;
           top: 100%;
           left: -60px;
           right: 0;
           height: 40px;
-          background: teal;
+          background: aliceblue;
           /* Old browsers */
-          background: -moz-linear-gradient(top, teal 0%, rgba(0, 128, 128, 0) 100%);
+          background: -moz-linear-gradient(top, aliceblue 0%, rgba(240, 248, 255, 0) 100%);
           /* FF3.6+ */
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, teal), color-stop(100%, rgba(0, 128, 128, 0)));
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, aliceblue), color-stop(100%, rgba(240, 248, 255, 0)));
           /* Chrome,Safari4+ */
-          background: -webkit-linear-gradient(top, teal 0%, rgba(0, 128, 128, 0) 100%);
+          background: -webkit-linear-gradient(top, aliceblue 0%, rgba(240, 248, 255, 0) 100%);
           /* Chrome10+,Safari5.1+ */
-          background: -o-linear-gradient(top, teal 0%, rgba(0, 128, 128, 0) 100%);
+          background: -o-linear-gradient(top, aliceblue 0%, rgba(240, 248, 255, 0) 100%);
           /* Opera 11.10+ */
-          background: -ms-linear-gradient(top, teal 0%, rgba(0, 128, 128, 0) 100%);
+          background: -ms-linear-gradient(top, aliceblue 0%, rgba(240, 248, 255, 0) 100%);
           /* IE10+ */
-          background: linear-gradient(to bottom, teal 0%, rgba(0, 128, 128, 0) 100%);
+          background: linear-gradient(to bottom, aliceblue 0%, rgba(240, 248, 255, 0) 100%);
           /* W3C */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
           /* IE6-9 */
-          z-index: 1; }
+          opacity: 0;
+          -webkit-transition: opacity 100ms;
+          -moz-transition: opacity 100ms;
+          -ms-transition: opacity 100ms;
+          -o-transition: opacity 100ms;
+          transition: opacity 100ms; }
       #screen #menu .content .categories-container {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -520,12 +567,12 @@ h2 {
           margin-top: 1px;
           margin-bottom: 1px; }
           #screen #menu .content .categories-container a.category-link:hover, #screen #menu .content .categories-container a.category-link.active {
-            background-color: cyan;
-            color: black; }
+            background-color: #B8252F;
+            color: white; }
           #screen #menu .content .categories-container a.category-link .count {
-            font-family: "Apfel Grotezk", sans-serif;
+            font-family: "DM Sans", sans-serif;
             font-size: 17px;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.01em;
             line-height: 1.4em;
             font-weight: 400;
             font-style: normal;
@@ -561,28 +608,45 @@ h2 {
           left: -60px;
           right: 0;
           height: 40px;
-          background: rgba(0, 128, 128, 0);
+          background: rgba(240, 248, 255, 0);
           /* Old browsers */
-          background: -moz-linear-gradient(top, rgba(0, 128, 128, 0) 0%, teal 100%);
+          background: -moz-linear-gradient(top, rgba(240, 248, 255, 0) 0%, aliceblue 100%);
           /* FF3.6+ */
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 128, 128, 0)), color-stop(100%, teal));
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(240, 248, 255, 0)), color-stop(100%, aliceblue));
           /* Chrome,Safari4+ */
-          background: -webkit-linear-gradient(top, rgba(0, 128, 128, 0) 0%, teal 100%);
+          background: -webkit-linear-gradient(top, rgba(240, 248, 255, 0) 0%, aliceblue 100%);
           /* Chrome10+,Safari5.1+ */
-          background: -o-linear-gradient(top, rgba(0, 128, 128, 0) 0%, teal 100%);
+          background: -o-linear-gradient(top, rgba(240, 248, 255, 0) 0%, aliceblue 100%);
           /* Opera 11.10+ */
-          background: -ms-linear-gradient(top, rgba(0, 128, 128, 0) 0%, teal 100%);
+          background: -ms-linear-gradient(top, rgba(240, 248, 255, 0) 0%, aliceblue 100%);
           /* IE10+ */
-          background: linear-gradient(to bottom, rgba(0, 128, 128, 0) 0%, teal 100%);
+          background: linear-gradient(to bottom, rgba(240, 248, 255, 0) 0%, aliceblue 100%);
           /* W3C */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
-          /* IE6-9 */ }
+          /* IE6-9 */
+          opacity: 0;
+          -webkit-transition: opacity 100ms;
+          -moz-transition: opacity 100ms;
+          -ms-transition: opacity 100ms;
+          -o-transition: opacity 100ms;
+          transition: opacity 100ms; }
     body.menu-open #screen #menu {
+      background-color: #F0F8FF;
       width: 50vw;
       max-width: 50vw; }
       body.menu-open #screen #menu .content {
         opacity: 1;
         pointer-events: all; }
+        body.menu-open #screen #menu .content .gradient {
+          -webkit-transition: opacity 100ms 300ms;
+          -moz-transition: opacity 100ms 300ms;
+          -ms-transition: opacity 100ms 300ms;
+          -o-transition: opacity 100ms 300ms;
+          transition: opacity 100ms 300ms;
+          opacity: 1; }
+      body.menu-open #screen #menu .rotated {
+        color: #0E1B30;
+        background-color: #F0F8FF; }
       @media (max-width: 991.98px) {
         body.menu-open #screen #menu {
           width: 66vw;
@@ -639,7 +703,7 @@ h2 {
     body.menu-open #screen #ui-center header, body.menu-open #screen #ui-center .bottom {
       opacity: 0; }
     body.story-open #screen #ui-center {
-      transform: translate(calc(-21vw - 30px), 0) scale(0.9); }
+      transform: translate(calc(-25% - 15px), 0) scale(0.9); }
       @media (max-width: 991.98px) {
         body.story-open #screen #ui-center {
           opacity: 0;
@@ -665,6 +729,7 @@ h2 {
       text-align: center;
       bottom: 18vh;
       width: 100%;
+      color: #F0F8FF;
       pointer-events: none; }
       #screen #ui-center #pagination .prev, #screen #ui-center #pagination .next {
         pointer-events: all; }
@@ -683,8 +748,10 @@ h2 {
       transform: translate(-50%, -50%);
       text-align: center;
       z-index: 2;
-      max-width: 58vh;
+      max-width: 52vh;
       width: 70%; }
+      #screen #ui-center #wheel-center #wheel-title {
+        color: #F0F8FF; }
   #screen #ui-right {
     position: absolute;
     pointer-events: none;
@@ -714,6 +781,8 @@ h2 {
       transform: translate(-100vw); }
     #screen #ui-right .content {
       max-height: 100%;
+      min-height: 100%;
+      background-color: #F0F8FF;
       padding: 0 40px;
       width: 100%;
       overflow-y: scroll;
@@ -727,14 +796,15 @@ h2 {
       max-width: 550px; }
       #screen #ui-right .story .category-label {
         display: inline-flex;
-        background-color: rgba(252, 187, 195, 0.5);
+        background-color: #FF9493;
         height: 30px;
         border-radius: 15px;
         align-items: center;
         padding: 0 15px 2px;
-        margin: 3px 1px; }
+        margin: 3px 1px;
+        color: white; }
         #screen #ui-right .story .category-label:hover, #screen #ui-right .story .category-label.active {
-          background-color: #00f0f0; }
+          background-color: #B8252F; }
   #screen #texts {
     position: absolute;
     pointer-events: none;
@@ -751,10 +821,15 @@ h2 {
         padding-left: 60px; } }
     #screen #texts .content {
       max-width: 600px;
-      padding: 0 40px; }
+      padding: 0 40px;
+      color: #F0F8FF; }
       @media (max-width: 575.98px) {
         #screen #texts .content {
           padding: 0 20px; } }
+    #screen #texts a {
+      color: white; }
+      #screen #texts a:hover {
+        color: #B8252F; }
     body.text-open #screen #texts {
       opacity: 1;
       pointer-events: all; }

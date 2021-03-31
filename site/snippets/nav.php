@@ -23,11 +23,11 @@ function countByCatogory ($allStories, $cat) {
       <span class="hamburger-box"><span class="hamburger-inner"></span></span>
     </button>
   </div>
-  <div class="rotated font-sans-m color-white-50" onclick="a.toggleMenu();">Categories</div>
+  <div class="rotated font-sans-m color-blue-50" onclick="a.toggleMenu();">Categories</div>
   <div class="content">
   	<header>
-  		<p class="font-sans-m color-white-50">
-  			<a onclick="a.reset();">X Stories</a>
+  		<p class="font-sans-m color-blue-50">
+  			<a onclick="a.reset();">(Title)</a>
   		</p>
 			<div class="gradient"></div>
   	</header>
@@ -35,7 +35,7 @@ function countByCatogory ($allStories, $cat) {
 			<div class="container-fluid px-0">
 				<div class="row">
 					<div class="col">
-						<!-- <p class="font-sans-m color-white-50 mb-space">All categories</p> -->
+						<!-- <p class="font-sans-m color-blue-50 mb-space">All categories</p> -->
 					</div>
 				</div>
 				<div class="row">
@@ -66,12 +66,12 @@ function countByCatogory ($allStories, $cat) {
 				</div>
 			</div>
 		</div>
-		<div class="bottom color-white-50">
-			<p class="my-2 mr-space-2"><a onclick="a.openText('about');" class="hover-white">About the stories</a></p>
-			<p class="my-2 mr-space-2"><a onclick="a.openText('privacy');" class="hover-white">Privacy policy</a></p>
+		<div class="bottom color-blue-50">
+			<p class="my-2 mr-space-2"><a onclick="a.openText('about');" class="hover-blue">About the stories</a></p>
+			<p class="my-2 mr-space-2"><a onclick="a.openText('privacy');" class="hover-blue">Privacy policy</a></p>
 			<p class="my-2 mr-space-2">Site: 
-				<a class="color-white-50 hover-white no-u" href="https://twitter.com/fedfragapane" target="_blank">F.&nbsp;Fragapane</a>, 
-				<a class="color-white-50 hover-white no-u" href="https://alexpiacentini.com" target="_blank">A.&nbsp;Piacentini</a>
+				<a class="color-blue-50 hover-blue no-u" href="https://twitter.com/fedfragapane" target="_blank">F.&nbsp;Fragapane</a>, 
+				<a class="color-blue-50 hover-blue no-u" href="https://alexpiacentini.com" target="_blank">A.&nbsp;Piacentini</a>
 			</p>
 			<div class="gradient"></div>
 		</div>

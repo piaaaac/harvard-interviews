@@ -4,7 +4,7 @@
    ------------------------------ */
 
 var slots = 50;
-var defaultTitle = "Food<br />Stories";
+var defaultTitle = "(Title)"; //<br />(Stories)";
 
 // -------------------------------------------
 // CLASSES

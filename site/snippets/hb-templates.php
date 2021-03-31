@@ -28,7 +28,7 @@ $privacyText = $privacy->text()->kt();
       <a class="color-purple mx-space" onclick="a.openStory(false);">Hide</a>
       <a class="color-purple" onclick="a.openNextStory();">Next &rarr;</a>
     </p>
-    <h1 class="">{{title}}</h1>
+    <h1 class="font-sans-l">{{title}}</h1>
     <p class="my-space">
       {{#each categoriesArray}}
         <a 
@@ -42,7 +42,7 @@ $privacyText = $privacy->text()->kt();
       {{text}}
     </p>
     <p class="font-sans-m my-space">
-      Contributed by {{author}}. {{place}}, {{dateFormatted}}
+      Contributed by {{author}}. {{place}} {{!--, {{dateFormatted}} --}}
     </p>
     <p class="spacer" style="height: 120px;"></p>
   </div>
@@ -61,7 +61,7 @@ $privacyText = $privacy->text()->kt();
       <h2 class="font-serif-m upper"><?= $aboutTitle ?></h2>
     </p>
     <p class="my-space-2">
-      <img src="<?= $assets ?>/images/circle_legend.svg" width="100%" />
+      <img src="<?= $assets ?>/images/circle__legend.svg" width="100%" />
     </p>
     <div class="kt font-serif-m">
       <?= $aboutText ?>
