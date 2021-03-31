@@ -30,6 +30,7 @@ return function () {
 			"categoriesSlugs"	=> $csSlugs,
 			"storyDate" 			=> $s["content"]["storydate"],
 			"author"    			=> $s["content"]["author"],
+			"project"    			=> $s["content"]["project"],
 			"source"    			=> $s["content"]["source"],
 			"place"     			=> $s["content"]["place"] ?? "",
 		];

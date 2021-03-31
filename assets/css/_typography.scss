@@ -65,7 +65,7 @@ $font-serif: 'Jomolhari', serif;
 @mixin font-serif-huge  { 
   @include font-style($font-serif,  6.0vw, 6.0vw, 5.0vh,  6.0vh,  6.0vh,  0.02em,  1.20em,  400,  normal); }
 @mixin font-serif-m     { 
-  @include font-style($font-serif,  20px,  20px,  20px,   20px,   20px,   0.02em,  1.4em,   400,  normal); }
+  @include font-style($font-serif,  19px,  19px,  19px,   19px,   19px,   0.02em,  1.4em,   400,  normal); }
 
 .font-sans-l      { @include font-sans-l; }
 .font-sans-m      { @include font-sans-m; }

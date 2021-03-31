@@ -34,6 +34,10 @@ sidebar:
         label: Author
         type: text
 
+      project:
+        label: Project
+        type: text
+
       source:
         label: Source
         type: text

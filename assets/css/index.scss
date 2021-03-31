@@ -93,6 +93,9 @@ h2 {
   a {
     color: $purple;
   }
+  p {
+    margin-bottom: 1.5em;
+  }
 }
 
 // ------------------------------------------------------------------------
@@ -402,6 +405,7 @@ opacity: 0;
       width: 100%;
       color: $lightblue;
       pointer-events: none;
+      user-select: none;
       .prev, .next {
         pointer-events: all;
         &.hide {
@@ -518,6 +522,22 @@ opacity: 0;
     @at-root body.text-open & {
       opacity: 1;
       pointer-events: all;
+    }
+
+    .credits {
+      p {
+        @include font-sans-m;
+        margin-bottom: 12px;
+        color: rgba(white, 0.4);
+        em {
+          font-style: normal;
+          color: white; 
+        }
+        a {
+          // color: white;
+          text-decoration: underline;
+        }
+      }
     }
   }
 

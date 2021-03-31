@@ -3,7 +3,7 @@ $url = $site->url();
 $urlSocialImg = $kirby->url("assets"). "/images/fs-social.png";
 $siteTitle = $site->title();
 $title = $site->title();
-$desc = "Project by xxxxxxxx";
+$desc = "Project by Harvard University";
 ?>
 
 <!DOCTYPE html><html><head>

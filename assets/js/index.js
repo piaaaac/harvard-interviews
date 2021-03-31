@@ -4,7 +4,7 @@
    ------------------------------ */
 
 var slots = 50;
-var defaultTitle = "(Title)"; //<br />(Stories)";
+var defaultTitle = "(Title)";
 
 // -------------------------------------------
 // CLASSES
@@ -159,7 +159,7 @@ function App (data) {
       item.addClass("active");
     });
     var c = _.find(this.categories, { 'slug': catSlug });
-    $("#wheel-title").text(c.name);
+    $("#wheel-title").text(cleanTitle(c.name));
     $(".category-link[data-cat-id='"+ catSlug +"']").addClass("active");
     this.state.highlightedCategory = catSlug;
   }
@@ -291,6 +291,12 @@ function mqSizeOrUp (bootstrapSize) {
   };
   var s = breakpoints[bootstrapSize];
   return window.matchMedia( "(min-width: "+ s +"px)" ).matches;
+}
+
+function cleanTitle (string) {
+  if (string === "Efficient/Motivating") return "Efficient​/​Motivating";
+  if (string === "Inefficient/Demotivating") return "Inefficient​/​Demotivating";
+  return string;
 }
 
 // -------------------------------------------

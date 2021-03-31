@@ -66,23 +66,38 @@ $privacyText = $privacy->text()->kt();
     <div class="kt font-serif-m">
       <?= $aboutText ?>
     </div>
-    <div class="kt my-space-2">
-      <h2 class="font-serif-m upper">Project by xxxxxxxx</h2>
+
+    <p class="spacer" style="height: 50px;"></p>
+
+    <h2 class="font-sans-m mb-2">CREDITS</h2>
+
+    <div class="credits">
+      <p>
+        <a href="https://www.linkedin.com/in/bethaltringer/" target="_blank">Dr. Beth Altringer, Harvard University</a>
+        <br />Principal Investigator (Study Design/Data Collection/Quantitative & Qualitative Research Lead)
+      </p>
+      <p>
+        <a href="https://twitter.com/fedfragapane" target="_blank">Federica Fragapane</a>
+        <br />Data Visualization Lead
+      </p>
+      <p>
+        <a href="https://alexpiacentini.com" target="_blank">Alex Piacentini</a>
+        <br />Web Design Lead and Web Development
+      </p>
+      <p>
+        <em>Ilia Barantchouk</em>
+        <br />Quantitative Research Assistance
+      </p>
+      <p>
+        <em>Laurie Delaney, Harvard University</em>
+        <br />Qualitative Research Assistance (Tagging Lead and First Rater)
+      </p>
+      <p>
+        <em>Jared Meyers, Harvard University</em>
+        <br />Qualitative Research Assistance (Tagging Second Rater)
+      </p>
     </div>
-    <p class="my-space-2">
-      <img src="<?= $assets ?>/images/logo.png" width="120" />
-    </p>
-    <p class="my-space-2">
-      <a class="button" target="_blank" href="http://alexpiacenitni.com">
-        Visit the website
-      </a>
-    </p>
-    <p class="kt font-serif-m">
-      Site designed and developed by
-      <a href="https://twitter.com/fedfragapane" target="_blank">Federica&nbsp;Fragapane</a>
-      and 
-      <a href="https://alexpiacentini.com" target="_blank">Alex&nbsp;Piacentini</a>
-    </p>
+
     <p class="spacer" style="height: 100px;"></p>
   </div>
 
