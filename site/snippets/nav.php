@@ -27,7 +27,7 @@ function countByCatogory ($allStories, $cat) {
   <div class="content">
   	<header>
   		<p class="font-sans-m color-blue-50">
-  			<a onclick="a.reset();">(Title)</a>
+  			<a onclick="a.reset();">Designer Decisions</a>
   		</p>
 			<div class="gradient"></div>
   	</header>

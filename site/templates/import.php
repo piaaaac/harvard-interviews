@@ -1,5 +1,6 @@
 <?php
 
+// Data FINAL FINAL FINAL
 $json = <<<EOT
 [
   {
@@ -2957,17 +2958,18 @@ $json = <<<EOT
 EOT;
 
 $data = json_decode($json, true);
+exit();
 
 
 // --- CHECK IF ALL WERE IMPORTED --------------------
-// foreach ($data as $d) {
-//   $slug = str::slug($d['title']);
-//   $imported = (pages("stories")->childrenAndDrafts()->has("stories/$slug"));
-//   echo $imported ? "YES - " : "NOPEEE - ";
-//   echo $slug;
-//   echo "<br>";
-// }
-// exit();
+foreach ($data as $d) {
+  $slug = str::slug($d['title']);
+  $imported = (pages("stories")->childrenAndDrafts()->has("stories/$slug"));
+  echo $imported ? "YES - " : "NOPEEE - ";
+  echo $slug;
+  echo "<br>";
+}
+exit();
 // ---------------------------------------------------
 
 

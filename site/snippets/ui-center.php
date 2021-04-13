@@ -16,7 +16,7 @@
 	<div id="wheel-wrapper">
 		<?php snippet("wheel") ?>
 		<div id="wheel-center">
-			<h1 id="wheel-title" class="font-serif-huge">(Title)</h1>
+			<h1 id="wheel-title" class="font-serif-huge">Designer Decisions</h1>
 		</div>
 		<div id="pagination">
 			<a class="prev" onclick="a.prevPage();">&larr;&nbsp;</a>
@@ -26,7 +26,7 @@
 	</div>
 	<div class="bottom">
 		<span class="color-lightblue-30">
-			Project by <a class="color-lightblue" onclick="a.openText('about');">Harvard University</a>
+			Project by <a class="color-lightblue" onclick="a.openText('about');">Design Lab, Harvard University</a>
 		</span>
 	</div>
 </div>

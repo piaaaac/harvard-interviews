@@ -4,7 +4,7 @@
    ------------------------------ */
 
 var slots = 50;
-var defaultTitle = "(Title)";
+var defaultTitle = "Designer Decisions";
 
 // -------------------------------------------
 // CLASSES

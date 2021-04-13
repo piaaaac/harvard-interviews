@@ -20,9 +20,11 @@
 
 	<div id="texts"><div class="content"></div></div>
 
+	<?php /*
 	<a id="logo" target="_blank" href="">
 		<img src="<?= $kirby->url("assets") ?>/images/logo.png" />
 	</a>
+	*/ ?>
 </div>
 
 <?php snippet("hb-templates") ?>
